@@ -10,7 +10,7 @@
 	<title>User Management</title>
 </svelte:head>
 
-<div class=" flex-col max-w-sm">
+<div class=" flex-col max-w-sm space-y-5">
 	<h1 class="h1">Sveltekit + Supabase Auth</h1>
 	<div class="col-6 form-widget">
 		<Auth
@@ -19,7 +19,7 @@
 			redirectTo={`${data.url}/auth/callback`}
 			showLinks={false}
 			appearance={{ theme: ThemeSupa, style: { input: 'color: #fff' } }}
-			providers={['google', 'discord']}
+			providers={['google', 'discord', 'github']}
 		/>
 	</div>
 </div>
